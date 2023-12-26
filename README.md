@@ -11,4 +11,8 @@ Functionalities:
 - Save & load game
 - See game history
 
+?/11/2023: Successfully built gameplay UI
 22/12/2023: Trying to fix the package encapsulation
+26/12/2023: Successfully ran boardgen on UI
+
+Plan: Endgame mechanisms
