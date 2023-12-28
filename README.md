@@ -2,7 +2,7 @@
 Sudoku app recreation using java
 
 Methodology:
-- Reuse a sudoku board generation (boardgen) algorithm (source will be included later) using C++
+- Reuse a sudoku board generation (boardgen) algorithm using C++
 - Create a native method in Java to call the boardgen method
 - Create the game UI using Java
 
