@@ -20,6 +20,7 @@ Project Components:
 
 Running the Program:
 - Open a Terminal, create the directory to the src folder of the project
+- Run "$ export JAVA_HOME=<path_to_jdk>". This will create an alias for the directory to your JDK.
 - Run "$ javac -h sudokuboardgen1.java". This will create a header file named <sudokuboardgen1.h> and link a Java native library named "libprojectbtlcpp.so"
 - Run "$ gcc -fPIC -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/linux" -shared -o libprojectbtlcpp.so SudokuGenerator.cpp SudokuSolver.cpp boardgenobj.cpp". This will compile the cpp files and generate the Java native library "libprojectbtlcpp.so". All the libraries used in the Java native library must be compiled, including the libraries for Boardgen (SudokuGenerator.cpp & SudokuSolver.cpp) and the C++ file defining the native methods (boardgenobj.cpp).
 - Run "$ java -Djava.library.path=<insert_path_to_src_folder> sudoku". This will run the Java UI for the base game.
