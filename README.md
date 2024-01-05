@@ -23,6 +23,7 @@ Running the Program:
 - Run "$ export JAVA_HOME=<path_to_jdk>". This will create an alias for the directory to your JDK.
 - Run "$ javac -h sudokuboardgen1.java". This will create a header file named <sudokuboardgen1.h> and link a Java native library named "libprojectbtlcpp.so"
 - Run "$ gcc -fPIC -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/linux" -shared -o libprojectbtlcpp.so SudokuGenerator.cpp SudokuSolver.cpp boardgenobj.cpp". This will compile the cpp files and generate the Java native library "libprojectbtlcpp.so". All the libraries used in the Java native library must be compiled, including the libraries for Boardgen (SudokuGenerator.cpp & SudokuSolver.cpp) and the C++ file defining the native methods (boardgenobj.cpp).
+- Run "$ javac sudoku.java" to compile the main program for the base game.
 - Run "$ java -Djava.library.path=<insert_path_to_src_folder> sudoku". This will run the Java UI for the base game.
 
 ?/11/2023: Successfully built gameplay UI
@@ -31,6 +32,12 @@ Running the Program:
 
 26/12/2023: Successfully ran boardgen on UI
 
-Plan: Endgame mechanisms
+5/1/2024: Successfully implement endgame mechanism when player finishes the board
+
+Plan:
+- Timer
+- Midgame save
+- Load previous saves
+- Show game history
 
 Sudoku Boardgen Library: https://github.com/vaithak/Sudoku-Generator
