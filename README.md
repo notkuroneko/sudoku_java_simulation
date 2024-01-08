@@ -39,5 +39,6 @@ Plan:
 - Midgame save
 - Load previous saves
 - Show game history
+- Project Encapsulation (sort compiled class files into a different directory)
 
 Sudoku Boardgen Library: https://github.com/vaithak/Sudoku-Generator
