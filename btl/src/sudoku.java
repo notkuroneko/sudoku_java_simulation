@@ -243,7 +243,9 @@ public class sudoku{
                                         }
                                     });
                                 }
-                                else {g.board[tempi][tempj].setBackground(Color.white);}
+                                else {
+                                    g.board[tempi][tempj].setBackground(Color.white);
+                                }
                                 previ=tempi;
                                 prevj=tempj;
                             }

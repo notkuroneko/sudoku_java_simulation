@@ -21,12 +21,6 @@ JNIEXPORT void JNICALL Java_sudokuboardgen1_boardgen(JNIEnv *env, jobject thisOb
         for (auto j=0; j<9; j++) o_f << b[i][j] << endl;
     }
     o_f.close();
-    ifstream i_f("sudokuboardgentest.txt");
-    while (getline(i_f,temp)){
-        cout << temp; count=(count+1)%9;
-        if (count==0) cout << endl;
-    }
-    i_f.close();
     return;
 }
 
