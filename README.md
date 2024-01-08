@@ -26,15 +26,12 @@ Running the Program:
 - Run "$ javac sudoku.java" to compile the main program for the base game.
 - Run "$ java -Djava.library.path=<insert_path_to_src_folder> sudoku". This will run the Java UI for the base game.
 
-?/11/2023: Successfully built gameplay UI
-
-22/12/2023: Trying to fix the package encapsulation
-
-26/12/2023: Successfully ran boardgen on UI
-
-5/1/2024: Successfully implement endgame mechanism when player finishes the board
-
-8/1/2024: Found a bug in deselecting a box (can fill deselected box, further leftclick into the same box doesn't trigger the original UI change)
+Dev Log:
+- ?/11/2023: Successfully built gameplay UI
+- 22/12/2023: Trying to fix the package encapsulation
+- 26/12/2023: Successfully ran boardgen on UI
+- 5/1/2024: Successfully implement endgame mechanism when player finishes the board
+- 8/1/2024: Found a bug in deselecting a box (can fill deselected box, further leftclick into the same box doesn't trigger the original UI change)
 
 Plan:
 - Bug fix
