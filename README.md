@@ -34,7 +34,10 @@ Running the Program:
 
 5/1/2024: Successfully implement endgame mechanism when player finishes the board
 
+8/1/2024: Found a bug in deselecting a box (can fill deselected box, further leftclick into the same box doesn't trigger the original UI change)
+
 Plan:
+- Bug fix
 - Timer
 - Midgame save
 - Load previous saves
