@@ -1,16 +1,16 @@
 # sudoku_java_simulation
 Sudoku app recreation using Java (for Ubuntu)
 
-Methodology:
-- Reuse a sudoku board generation (boardgen) algorithm using C++
-- Create a native method in Java to call the boardgen method
-- Create the game UI using Java
-
 Functionalities:
 - Gameplay, including board filling and timer
 - Save & load game
 - See game history
 
+Methodology:
+- Reuse a sudoku board generation (boardgen) algorithm using C++
+- Create a native method in Java to call the boardgen method
+- Create the game UI using Java
+  
 Project Components:
 - Boardgen Library (C++, imported): <SudokuGenerator.h>; <SudokuSolver.h>
 - JNI (Java Native Interface) Library (C++, imported) to write native methods for Java in C++: <jni.h>
