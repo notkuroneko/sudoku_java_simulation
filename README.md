@@ -1,24 +1,24 @@
 # sudoku_java_simulation
 Sudoku app recreation using Java (for Ubuntu)
 
-Functionalities:
+# Functionalities:
 - Gameplay, including board filling and timer
 - Save & load game
 - See game history
 
-Methodology:
+# Methodology:
 - Reuse a sudoku board generation (boardgen) algorithm using C++
 - Create a native method in Java to call the boardgen method
 - Create the game UI using Java
   
-Project Components:
+# Project Components:
 - Boardgen Library (C++, imported): <SudokuGenerator.h>; <SudokuSolver.h>
 - JNI (Java Native Interface) Library (C++, imported) to write native methods for Java in C++: <jni.h>
 - A Java file generating a C++ header file, declaring native methods in the header file and linking a Java native library: sudokuboardgen1.java
 - A C++ file defining the native methods in the header files: boardgenobj.cpp
 - The Java file for the base game UI: sudoku.java
 
-Running the Program:
+# Running the Program:
 - Open a Terminal, create the directory to the src folder of the project
 - Run "$ export JAVA_HOME=<path_to_jdk>". This will create an alias for the directory to your JDK.
 - Run "$ javac -h sudokuboardgen1.java". This will create a header file named <sudokuboardgen1.h> and link a Java native library named "libprojectbtlcpp.so"
@@ -26,14 +26,14 @@ Running the Program:
 - Run "$ javac sudoku.java" to compile the main program for the base game.
 - Run "$ java -Djava.library.path=<insert_path_to_src_folder> sudoku". This will run the Java UI for the base game.
 
-Dev Log:
+# Dev Log:
 - ?/11/2023: Successfully built gameplay UI
 - 22/12/2023: Trying to fix the package encapsulation
 - 26/12/2023: Successfully ran boardgen on UI
 - 5/1/2024: Successfully implement endgame mechanism when player finishes the board
 - 8/1/2024: Found a bug in deselecting a box (can fill deselected box, further leftclick into the same box doesn't trigger the original UI change)
 
-Plan:
+# Plan:
 - Bug fix
 - Timer
 - Midgame save
